@@ -1,0 +1,236 @@
+.card {
+    position: relative;
+
+    .card-header,
+    .card-body,
+    .card-footer {
+        padding-top: $card-padding-y;
+        padding-bottom: $card-padding-y;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+.overlay-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+.media {
+    position: relative;
+}
+
+// blog img holder 
+.blog-media {
+    position: relative;
+
+    .badge {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        padding: 7px;
+        z-index: 10;
+    }
+}
+
+
+.figure {
+    position: relative;
+
+    .figure-img {
+        background: $gray-900;
+        display: block;
+
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+
+            img {
+                opacity: .7;
+            }
+        }
+    }
+
+    .figcaption {
+        display: inline;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $gray-800;
+        padding: $badge-padding-y $badge-padding-x;
+    }
+}
+
+
+.feature-posts {
+    @include flex;
+
+    .feature-post-item {
+        position: relative;
+        flex-grow: 1;
+        flex-basis: 0;
+        margin: 0 5px;
+
+        &:first-child {
+            display: flex;
+            align-items: center;
+            max-width: 120px;
+            min-width: 120px;
+            padding: 0 10px;
+            text-align: center;   
+            font-weight: 500;
+            background: $gray-900;
+            position: relative;
+            color: $white;
+
+        }
+
+        .feature-post-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 80%;
+            background: $white;
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: calc(11px + (13 - 11) * ((100vw - 320px) / (1200 - 320))); 
+            opacity: .5;
+            @include custom-transition(all,.2);   
+            color: $gray-900;   
+        }
+
+        &:hover .feature-post-caption{
+            opacity: 1;
+        }
+
+    }
+    @include media-breakpoint-up(lg) {
+        .feature-post-item .feature-post-caption {
+          font-size: 13px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .feature-post-item:nth-child(5) {
+          display: none;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .feature-post-item:nth-child(4) {
+          display: none;
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        .feature-post-item:nth-child(1) {
+          display: none;
+        }
+    }
+}
+
+// instagram wrapper
+.instagram-wrapper {
+    position: relative;
+    @include flex;  
+
+    .insta-item {
+        padding: 3px; 
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($black,.001);
+            @include flex;
+            align-items: center;
+            justify-content: center;
+            @include custom-transition(all,.3);
+            visibility: hidden;
+            opacity: 0;
+
+            span {
+                display: inline-block;
+                margin: 0 10px;
+                color: $white;
+
+                i {
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        &:hover {
+
+            .overlay {
+                background: rgba($black,.5);
+                opacity: 1;
+                visibility: visible;
+            }               
+        }
+
+    }
+
+    @include media-breakpoint-down(md) {
+        .insta-item:nth-child(6),
+        .insta-item:nth-child(5) {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        .insta-item:nth-child(4),
+        .insta-item:nth-child(3) {
+            display: none;
+        }
+    }
+
+    .ig-id {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 999;
+        background: $white;
+        padding: 10px 15px;
+        max-width: 170px;
+
+        a {
+            color: black;
+            font-size: 14px;
+        }
+    }
+
+    @include media-breakpoint-down (md) {
+
+        .id {
+            display: none;
+        }
+    }
+
+}
+
+
+.ad-card {
+    position: sticky;
+    top: $navbar-min-height;
+    height: 300px;
+    background: $gray-100;
+}
+

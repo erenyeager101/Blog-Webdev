@@ -1,0 +1,10 @@
+.page-footer {
+    @include flex;
+    align-items: center;
+    min-height: 130px;
+    padding: 15px 0;
+
+    .logo {
+        width: 100px;
+    }
+}

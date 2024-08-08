@@ -1,0 +1,33 @@
+.navbar {
+	min-height: $navbar-min-height;
+
+	.navbar-nav {
+		align-items: center;
+	}
+
+	.nav-item {
+
+		&.dropdown {
+
+			.dropdown-menu {
+				top: 139%;
+			}
+
+		}
+			
+
+		.nav-link {
+			padding-top: $navbar-nav-link-padding-y;
+			padding-bottom: $navbar-nav-link-padding-y;
+			font-size: $navbar-nav-link-font-size;
+			font-weight: $navbar-nav-link-font-weight;
+		}
+	}
+	
+	.navbar-brand {
+
+		img {
+			width: $navbar-brand-image-width;
+		}
+	} 
+}

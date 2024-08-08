@@ -1,0 +1,194 @@
+//
+// Color system
+//
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     lighten(#f44336,18%);
+$orange:  #fd7e14;
+$yellow:  #ffd54f;
+$green:   #9ccc65;
+$teal:    #c2f6ea;
+$cyan:    #81d4fa;
+
+$colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $teal;
+$secondary:     $gray-500;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            'Montserrat', sans-serif;;
+// stylelint-enable value-keyword-case
+
+
+
+
+// Navbar
+
+$navbar-min-height:               60px;
+$navbar-padding-y:                10px;
+$navbar-padding-x:                10px;
+
+$navbar-nav-link-padding-x:       .8rem;
+$navbar-nav-link-padding-y:       5px;
+$navbar-nav-link-font-size:       14px;
+$navbar-nav-link-font-weight:     600;
+
+$navbar-brand-image-width:        70px;
+
+
+
+// Cards
+$card-border-width:                 0;
+$card-border-color:                 transparent;
+$card-bg:                           transparent;
+$card-cap-bg:                       transparent;
+$card-padding-y:                    1rem;
+
+
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .55rem;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-font-size:              .9rem;
+
+$breadcrumb-divider-color:          $gray-900;
+$breadcrumb-active-color:           $gray-600;
+$breadcrumb-link-color:             $gray-900;
+$breadcrumb-divider:                quote("·");
+
+
+// Pagination
+
+$pagination-padding-y:              .3rem;
+$pagination-padding-x:              .7rem;
+$pagination-padding-y-sm:           .15rem;
+$pagination-padding-x-sm:           .5rem;
+$pagination-padding-y-lg:           .4rem ;
+$pagination-padding-x-lg:           1rem ;
+$pagination-border-color:           transparent;
+$pagination-color:                  $gray-800;
+$pagination-hover-bg:               rgba($primary, .3);
+$pagination-hover-border-color:     transparent;
+
+
+
+
+
+
+
+
+
+// Components
+//
+// Define common padding and border radius links and more.
+
+// border radius
+$border-radius:               0rem;
+$border-radius-lg:            0rem;
+$border-radius-sm:            0rem;
+
+// links
+$link-hover-decoration:       none;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         .500rem;
+$input-btn-padding-x:         .85rem;
+
+
+$input-btn-padding-y-sm:      .4rem;
+$input-btn-padding-x-sm:      .6rem;
+
+
+
+
+
+
+
+

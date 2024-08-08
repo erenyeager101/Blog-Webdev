@@ -1,0 +1,58 @@
+.subscribe-wrapper {
+	position: relative;
+
+	input {
+		width: 90%;
+		border-radius: 0 40px 40px 0;
+		margin: auto;
+	}
+
+	button {
+		@include circle(50);
+		line-height: 56px;
+		font-weight: bold;
+		font-size: 22px;
+		position: absolute;
+		border: 0;
+		right: 0;
+		top: -6px;
+		border: 2px solid $white !important;
+		transform: rotate(90deg);
+		padding: 0;
+		padding-bottom: 6px;
+		padding-left: 2px;
+
+		i {
+
+		}
+	}
+}
+
+
+// Form Control
+.form-control {
+
+	&:focus {
+		border-color: $primary;
+	}
+
+	&.form-control-sm {
+		height: 30px;
+		line-height: 35px;
+		font-size: 13px;
+	}
+	&.form-control-lg {
+		font-size: 16px;
+		height: 50px;
+		line-height: 60px;
+	}
+}
+
+select.form-control,
+textarea.form-control {
+	line-height: $line-height-base;
+}
+
+.form.dropdown-menu {
+	min-width: 300px !important
+}
