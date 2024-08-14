@@ -2,7 +2,7 @@
 
 Welcome to my blog on web development frameworks! This website is designed to showcase the latest trends, insights, and advancements in web development frameworks. Here, you'll find detailed articles and updates on popular frameworks like SvelteKit, GraphQL, Apollo, and more.
 
-![Web Development Frameworks](https://drive.google.com/file/d/1q2yrX5VHYNp0D65xRlTQV0ZzEVCSAgmO/view?usp=sharing)
+![Web Development Frameworks](https://drive.google.com/uc?export=view&id=1q2yrX5VHYNp0D65xRlTQV0ZzEVCSAgmO)
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ This blog website is built using the following technologies:
 
 - **HTML/CSS:** For structuring and styling the web pages.
 - **JavaScript:** For interactive features and dynamic content.
-- **React/Vue/Angular (if applicable):** For building and managing the UI components.
+- **React/Vue/Angular :** For building and managing the UI components.
 - **GraphQL:** For efficient data fetching and querying.
 - **Apollo:** For managing GraphQL data and state.
 - **SvelteKit (if applicable):** For building fast and modern web applications.
