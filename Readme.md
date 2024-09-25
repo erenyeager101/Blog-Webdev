@@ -1,4 +1,4 @@
-# Web Development Frameworks Blog
+# Web Development Frameworks Blog and their future usage
 
 Welcome to my blog on web development frameworks! This website is designed to showcase the latest trends, insights, and advancements in web development frameworks. Here, you'll find detailed articles and updates on popular frameworks like SvelteKit, GraphQL, Apollo, and more.
 
