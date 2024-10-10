@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Revolutionary Blog Writers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #A8E6CE, #D1E8E4); /* Light green gradient */
+    animation: gradient 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradient {
+    0% { background: #A8E6CE; }
+    50% { background: #D1E8E4; }
+    100% { background: #A8E6CE; }
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.title {
+    font-size: 3rem;
+    color: #333;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+}
+
+.writers {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.writer-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.writer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #4CAF50; /* Green link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+
+</style>
+<body>
+    <div class="background"></div>
+    <div class="background"></div>
+    <header>
+        <h1 class="title">Meet the Blog Writers</h1>
+        <p class="subtitle">Innovative minds shaping the digital world</p>
+    </header>
+    <main>
+        <section class="writers">
+            <div class="writer-card animated" id="kunal">
+                <h2>Kunal</h2>
+                <p>Kunal is passionate about coding and machine learning, exploring new technologies to create innovative solutions.</p>
+                <div class="contact-info">
+                    <p>Email: sonnekunal2@gmail.com</p>
+                    <p>Phone: 8459421723</p>
+                    <p><a href="https://www.linkedin.com/in/kunal" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+            <div class="writer-card animated" id="raj">
+                <h2>Raj</h2>
+                <p>Raj is a passionate tech enthusiast who loves to explore new trends in technology and innovation.</p>
+                <div class="contact-info">
+                    <p>Email: raj@google.com</p>
+                    <p>Phone: 8766542356</p>
+                    <p><a href="https://www.linkedin.com/in/raj" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+            <div class="writer-card animated" id="atharvav">
+                <h2>Atharvav</h2>
+                <p>Atharvav brings a unique perspective on software development and its impact on society.</p>
+                <div class="contact-info">
+                    <p>Email: atharvav@google.com</p>
+                    <p>Phone: 9876456743</p>
+                    <p><a href="https://www.linkedin.com/in/atharvav" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+            <div class="writer-card animated" id="hariom">
+                <h2>Hariom</h2>
+                <p>Hariom is an expert in web technologies, focusing on building scalable and efficient web applications.</p>
+                <div class="contact-info">
+                    <p>Email: hariom@google.com</p>
+                    <p>Phone: 8876902693</p>
+                    <p><a href="https://www.linkedin.com/in/hariom" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Animate the cards on load
+    const cards = document.querySelectorAll('.writer-card');
+    cards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('fadeIn');
+        }, index * 300); // Stagger the animations
+    });
+});
+
+    </script>
+    <footer>
+        <p>© 2024 Revolutionary Blog Writers. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

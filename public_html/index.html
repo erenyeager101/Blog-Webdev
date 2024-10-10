@@ -7,25 +7,21 @@
     <meta name="author" content="SYITC-Group15">
     <title>BLog | Exploring the Latest Trends in Web Development Frameworks
        </title>
-    <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JoeBLog main styles -->
+    
 	<link rel="stylesheet" href="assets/css/joeblog.css">
 </head>
+<style>
+    .highlight {
+    background-color: yellow;
+    font-weight: bold;
+    color: #333;
+}
+
+</style>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
-    <!-- page First Navigation -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/imgs/logo.png" alt="">
-            </a>
-            
-        </div>
-    </nav>
-    <!-- End Of First Navigation -->
-
-    <!-- Page Second Navigation -->
+    
     <nav class="navbar custom-navbar navbar-expand-md navbar-light bg-primary sticky-top">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,17 +37,17 @@
                         <a class="nav-link" href="single-post.html">Introduction</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="no-sidebar.html">About Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Contact Us</a>
-                            <a class="dropdown-item" href="#">More Blogs</a>
+                            <a class="dropdown-item" href="about.html">Contact Us</a>
+                            <a class="dropdown-item" href="single-post.html">More Blogs</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Continue</a>
+                            <a class="dropdown-item" href="https://github.com/erenyeager101">View Github</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -60,18 +56,13 @@
                 </ul>
                 <div class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="components.html" class="ml-4 btn btn-dark mt-1 btn-sm">Overview</a>
+                        <a href="single-post.html" class="ml-4 btn btn-dark mt-1 btn-sm">Overview</a>
                     </li>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- End Of Page Second Navigation -->
-    
-    <!-- page-header -->
     <header class="page-header"></header>
-    <!-- end of page header -->
-
     <div class="container">
         <section>
             <div class="feature-posts">
@@ -84,7 +75,7 @@
                 </a>
                 <a href="single-post.html" class="feature-post-item">
                     <img src="assets/imgs/angular.png" class="w-100" alt="">
-                    <div class="feature-post-caption">Angular.js</div>
+                    
                 </a>
                 <a href="single-post.html" class="feature-post-item">
                     <img src="assets/imgs/gra.png" class="w-100" alt="">
@@ -133,10 +124,7 @@
                             </div>
                             <div class="card-body px-0">
                                 <h5 class="card-title mb-2">SvelteKit</h5>    
-                                <!-- <small class="small text-muted">January 20 2019 
-                                    <span class="px-2">-</span>
-                                    <a href="#" class="text-muted">34 Comments</a>
-                                </small> -->
+                                
                                 <p class="my-2">Svelte has been gaining traction due to its unique approach of compiling components at build time. SvelteKit is the new framework for building Svelte applications, offering several advantages:
 
                                     Hybrid Rendering: Combines static site generation (SSG) and server-side rendering (SSR), providing flexibility in how applications are built and deployed.
@@ -159,10 +147,7 @@
                             </div>
                             <div class="card-body px-0">
                                 <h5 class="card-title mb-2">GraphQL and Apollo</h5> 
-                                <!-- <small class="small text-muted">January 19 2019 
-                                    <span class="px-2">-</span>
-                                    <a href="#" class="text-muted">64 Comments</a>
-                                </small> -->
+                               
                                 <p class="my-2">Overview: GraphQL is a query language for APIs that allows clients to request only the data they need. It provides a more efficient and flexible alternative to REST APIs, enabling better performance and more precise data retrieval.
                                     GraphQL is transforming the way APIs are designed and consumed. Apollo is a leading GraphQL implementation that offers:
 
@@ -187,10 +172,7 @@
                             </div>
                             <div class="card-body px-0">
                                 <h5 class="card-title mb-2">Progressive Web Apps (PWAs)</h5>   
-                                <!-- <small class="small text-muted">January 17 2019 
-                                    <span class="px-2">-</span>
-                                    <a href="#" class="text-muted">93 Comments</a>
-                                </small> -->
+                               
                                 <p class="my-2">Progressive Web Apps (PWAs) continue to be a significant trend, providing native-like experiences on the web. Tools and frameworks enhancing PWA development include:
 
                                     Workbox: A set of libraries for adding offline support and other PWA features, making web applications more resilient and reliable.
@@ -212,10 +194,7 @@
                             </div>
                             <div class="card-body px-0">
                                 <h5 class="card-title mb-2">Static Site Generation (SSG)</h5>  
-                                <!-- <small class="small text-muted">January 15 2019 
-                                    <span class="px-2">-</span>
-                                    <a href="#" class="text-muted">112 Comments</a>
-                                </small> -->
+                               
                                 <p class="my-2">Static Site Generation involves creating static HTML files for each page of a website during the build process. These files are then served to users directly from a web server or content delivery network (CDN). This is in contrast to server-side rendering (SSR), where pages are generated dynamically on each request.
                                     Build Time Generation: Pages are generated during the build process rather than on each user request. This ensures that content is served quickly without requiring server-side processing.
 Consistency: The same static files are served to every user, ensuring consistent performance and content delivery.
@@ -239,10 +218,7 @@ Consistency: The same static files are served to every user, ensuring consistent
                             </div>
                             <div class="card-body px-0">
                                 <h5 class="card-title mb-2">Vue.js</h5>    
-                                <!-- <small class="small text-muted">January 14 2019 
-                                    <span class="px-2">-</span>
-                                    <a href="#" class="text-muted">120 Comments</a>
-                                </small> -->
+                                
                                 <p class="my-2">Why It's Popular: Vue.js is a progressive JavaScript framework that is easy to integrate with existing projects or use for single-page applications. Vue's gentle learning curve, along with its flexibility and simplicity, makes it a favorite among developers who want to get started quickly.
 
                                     Latest Trend: With the release of Vue 3, the Composition API has been introduced. This API offers a more flexible and powerful way to organize and reuse code within Vue components, making it easier to manage complex applications.
@@ -289,135 +265,107 @@ Consistency: The same static files are served to every user, ensuring consistent
             </div>
 
             <!-- Sidebar -->
-            <div class="page-sidebar text-center">
-                <h6 class="sidebar-title section-title mb-4 mt-3">Current Frameworks</h6>
-                
-                
-                <p>Current Framework: React.js
+            <!-- Sidebar -->
+<div class="page-sidebar text-center">
+    <!-- Current Frameworks Section -->
+    <h6 class="sidebar-title section-title mb-4 mt-3" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Current Frameworks</h6>
+    
+    <p style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #555; line-height: 1.6;">
+        <strong>Current Framework:</strong> React.js<br><br>
+        <strong>Overview:</strong> React.js remains one of the most popular front-end libraries for building user interfaces. Known for its component-based architecture and virtual DOM, React enables developers to create dynamic and responsive applications efficiently.<br><br>
+        <strong>Strengths:</strong> Reusable components, strong community support, and a robust ecosystem.<br>
+        <strong>Recent Updates:</strong> Introduction of Concurrent Mode and React Server Components.<br><br>
+        <strong>Emerging Trends:</strong><br>
+        - <strong>Concurrent Mode:</strong> Enhances user experience by enabling React to pause and resume rendering work, improving responsiveness.<br>
+        - <strong>Server Components:</strong> Allow rendering parts of the application on the server, optimizing client-side performance.<br><br>
+        <strong>Case Study Comparison:</strong><br>
+        React’s Strengths: Proven performance, vast ecosystem, and community support.<br>
+        New Trends: Emerging technologies like Svelte and frameworks like Next.js offer different approaches to handling performance and rendering, potentially offering benefits in specific use cases.
+    </p>
 
-                    Overview: React.js remains one of the most popular front-end libraries for building user interfaces. Known for its component-based architecture and virtual DOM, React enables developers to create dynamic and responsive applications efficiently.
-                    Strengths: Reusable components, strong community support, and a robust ecosystem.
-                    Recent Updates: Introduction of Concurrent Mode and React Server Components.
-                    Emerging Trends:
-                    
-                    Concurrent Mode: Enhances user experience by enabling React to pause and resume rendering work, improving responsiveness.
-                    Server Components: Allow rendering parts of the application on the server, optimizing client-side performance.
-                    Case Study Comparison:
-                    
-                    React’s Strengths: Proven performance, vast ecosystem, and community support.
-                    New Trends: Emerging technologies like Svelte and frameworks like Next.js offer different approaches to handling performance and rendering, potentially offering benefits in specific use cases.
-                    </p>
-                
+    <!-- Search Section -->
+    <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Search Keywords</h6>
+<form id="searchForm" onsubmit="return false;">
+    <div class="subscribe-wrapper">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search..." style="border-radius: 25px; border: 1px solid #ccc;">
+        <button type="submit" class="btn btn-primary" style="border-radius: 25px; margin-top: 10px;" onclick="searchAndHighlight()"><i class="ti-location-arrow"></i></button>
+    </div>
+</form>
 
-                <h6 class="sidebar-title mt-5 mb-4">Search Keywords</h6>
-                <form action="">
-                    <div class="subscribe-wrapper">
-                        <input type="email" class="form-control" placeholder="Search">
-                        <button type="submit" class="btn btn-primary"><i class="ti-location-arrow"></i></button>
-                    </div>
-                </form>
 
-                <h6 class="sidebar-title mt-5 mb-4">Tags</h6>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#sveltekit</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#GraphQL</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#GrapghQL and Apollo</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#Vue.js</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#SSG</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#PWA's</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#Angular</a>
-                <!-- <a href="javascript:void(0)" class="badge badge-primary m-1">#dolor</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#incidunt</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#possimus</a> -->
+    <!-- Tags Section -->
+    <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Tags</h6>
+    <div class="tags">
+        <a href="sveltekit.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#SvelteKit</a>
+        <a href="GraphQL.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#GraphQL</a>
+        <a href="Apollo.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#GraphQL and Apollo</a>
+        <a href="Vue.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#Vue.js</a>
+        <a href="SSG.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#SSG</a>
+        <a href="pwa.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#PWA's</a>
+        <a href="Angular.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#Angular</a>
+    </div>
 
-                <h6 class="sidebar-title mt-5 mb-4">Frameworks</h6>
-                <div class="row px-3">
-                    <div class="col-4 p-1 figure">
-                        <a href="#" class="figure-img">
-                            <img src="assets/imgs/fw1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-4 p-1 figure">
-                        <a href="#" class="figure-img">
-                            <img src="assets/imgs/fw2.png" alt="" class="w-100 m-0">
-                        </a>
-                    </div>  
-                    <div class="col-4 p-1 figure">
-                        <a href="#" class="figure-img">
-                            <img src="assets/imgs/fw3.png" alt="" class="w-100">
-                        </a>
-                    </div>
-                    <div class="col-4 p-1 figure">
-                        <a href="#" class="figure-img">
-                            <img src="assets/imgs/fw4.jpg" alt="" class="w-100 m-0">
-                        </a>
-                    </div>  
-                    <div class="col-4 p-1 figure">
-                        <a href="#" class="figure-img">
-                            <img src="assets/imgs/fw1.png" alt="" class="w-100">
-                        </a>
-                    </div>
-                    <div class="col-4 p-1 figure">
-                        <a href="#" class="figure-img">
-                            <img src="assets/imgs/fw3.png" alt="" class="w-100 m-0">
-                        </a>
-                    </div>                          
-                </div>  
+    <!-- Frameworks Section -->
+    <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Frameworks</h6>
+    <div class="row px-3">
+        <div class="col-4 p-1 figure">
+            <a href="#" class="figure-img">
+                <img src="assets/imgs/fw1.png" alt="" class="w-100" style="transition: transform 0.3s ease;">
+            </a>
+        </div>
+        <div class="col-4 p-1 figure">
+            <a href="#" class="figure-img">
+                <img src="assets/imgs/fw2.png" alt="" class="w-100 m-0" style="transition: transform 0.3s ease;">
+            </a>
+        </div>  
+        <div class="col-4 p-1 figure">
+            <a href="#" class="figure-img">
+                <img src="assets/imgs/fw3.png" alt="" class="w-100" style="transition: transform 0.3s ease;">
+            </a>
+        </div>
+        <!-- Repeat for other images -->
+    </div>
 
-                <figure class="figure mt-5">
-                    <a href="single-post.html" class="figure-img">
-                        <img src="assets/imgs/img-4.jpg" alt="" class="w-100">
-                        <figcaption class="figcaption">Web Dev in 2024??</figcaption>
-                    </a>
-                </figure>
+    <!-- Featured Post Section -->
+    <figure class="figure mt-5">
+        <a href="single-post.html" class="figure-img" style="transition: transform 0.4s ease;">
+            <img src="assets/imgs/img-4.jpg" alt="" class="w-100" style="border-radius: 10px;">
+            <figcaption class="figcaption" style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #333; margin-top: 10px;">Web Dev in 2024?</figcaption>
+        </a>
+    </figure>
 
-                <h6 class="sidebar-title mt-5 mb-4">Popular Frameworks</h6>
-                <div class="card mb-4">
-                    <a href="single-post.html" class="overlay-link"></a>
-                    <div class="card-header p-0">                                   
-                        <div class="blog-media">
-                            <img src="assets/imgs/Angular.png" alt="" class="w-100">
-                            <a href="#" class="badge badge-primary">#Angular</a>      
-                        </div>  
-                    </div>
-                    <div class="card-body px-0">
-                        <h5 class="card-title mb-2">Why Angular</h5>   
-                       
-                        
-                        <p class="my-2">Angular, developed by Google, is a comprehensive framework that provides everything needed to build dynamic web applications. It includes features like two-way data binding, dependency injection, and a powerful CLI.
+    <!-- Popular Frameworks Section -->
+    <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Popular Frameworks</h6>
+    <div class="card mb-4">
+        <a href="single-post.html" class="overlay-link"></a>
+        <div class="card-header p-0">                                   
+            <div class="blog-media">
+                <img src="assets/imgs/Angular.png" alt="" class="w-100" style="border-radius: 10px; transition: transform 0.4s ease;">
+                <a href="#" class="badge badge-primary" style="font-size: 0.9rem; border-radius: 15px;">#Angular</a>      
+            </div>  
+        </div>
+        <div class="card-body px-0">
+            <h5 class="card-title mb-2" style="font-family: 'Roboto', sans-serif; color: #333;">Why Angular</h5>
+            <p style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #555; line-height: 1.6;">
+                Angular, developed by Google, is a comprehensive framework that provides everything needed to build dynamic web applications. It includes features like two-way data binding, dependency injection, and a powerful CLI.
+            </p>
+        </div>      
+    </div>
 
-                        </p>
-                    </div>      
-                </div>
+    <!-- Additional Links -->
+    <div class="media text-left mb-4">
+        <a href="Vue.html" class="overlay-link"></a>
+        <img class="mr-3" src="assets/imgs/blog-1.jpg" width="100px" alt="Generic placeholder image" style="border-radius: 10px;">
+        <div class="media-body">
+            <h6 class="mt-0" style="font-family: 'Roboto', sans-serif; color: #333;">Vue.js</h6>
+            <p class="mb-2" style="font-family: 'Roboto', sans-serif; color: #555;">Vue.js</p>
+        </div>
+    </div>
 
-                <div class="media text-left mb-4">
-                    <a href="Vue.html" class="overlay-link"></a>
-                    <img class="mr-3" src="assets/imgs/blog-1.jpg" width="100px" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h6 class="mt-0">Vue.js</h6>
-                        <p class="mb-2"> Vue.js</p>
-                        
-                    </div>
-                </div>
-                <div class="media text-left mb-4">
-                    <a href="SSG.html" class="overlay-link"></a>
-                    <img class="mr-3" src="assets/imgs/Vue.png" width="100px" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h6 class="mt-0">SSG</6>
-                        <p class="mb-2"> SSG</p>                            
-                        
-                    </div>
-                </div>
-                <div class="media text-left mb-4">
-                    <a href="GraphQL.html" class="overlay-link"></a>
-                    <img class="mr-3" src="assets/blog9.png" width="100px" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h6 class="mt-0">GraphQL</h6>
-                        <p class="mb-2"> GraphQL</p>                        
-                        
-                    </div>
-                </div>  
-               
-            </div>
+    <!-- Repeat for other media items -->
+
+</div>
+
         </div>
     </div>
 
@@ -452,6 +400,7 @@ Consistency: The same static files are served to every user, ensuring consistent
     </div>
 
     <!-- Page Footer -->
+
     <footer class="page-footer">
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -464,14 +413,159 @@ Consistency: The same static files are served to every user, ensuring consistent
             </div>
             </div>      
     </footer>
+   <!-- Remove the container to make the footer full width -->
+<footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192;">
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with me on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/your-profile" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/your-profile" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:sonnekunal2@gmail.com" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/your-profile" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-profile" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/erenyeager101" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">WT-HA Blog Website</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              Welcome to WT blog website where we share articles on the latest trends in web development, machine learning, and emerging technologies. Dive into my posts to learn and stay updated!
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Categories</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="#!" class="text-dark">Web Development</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Machine Learning</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">IoT & Automation</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Project Guides</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Quick Links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="#!" class="text-dark">Explore More Blogs</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Contact</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">My Projects</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Contribute</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i> Pune, Maharashtra, India</p>
+            <p><i class="fas fa-envelope mr-3"></i> sonnekunal2@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91 9876543210</p>
+            <p><i class="fas fa-print mr-3"></i> Available for collaborations!</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="https://github.com/erenyeager101">View Project on Github</a> 
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- End of Footer -->
+  
     <!-- End of Page Footer -->
 
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- JoeBLog js -->
     <script src="assets/js/joeblog.js"></script>
+    <script>
+       
+function searchAndHighlight() {
+  
+    removeHighlights();
+
+    const keyword = document.getElementById('searchInput').value.toLowerCase();
+    if (!keyword) return;
+
+    const content = document.body.innerHTML;
+    const regex = new RegExp(`(${keyword})`, 'gi'); 
+
+    const highlightedContent = content.replace(regex, '<span class="highlight">$1</span>');
+    document.body.innerHTML = highlightedContent;
+
+    const firstHighlight = document.querySelector('.highlight');
+    if (firstHighlight) {
+        firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}
+
+function removeHighlights() {
+    const highlightedElements = document.querySelectorAll('.highlight');
+    highlightedElements.forEach(el => {
+        el.outerHTML = el.innerHTML; 
+    });
+}
+
+    </script>
 
 </body>
 </html>

@@ -6,16 +6,14 @@
     <meta name="description" content="Latest Trends in Web Development Frameworks Lets discuss them with thier usage!.">
     <meta name="author" content="Devcrud">
     <title>Blog | Latest Trends in Web Development Frameworks</title>
- 
+    <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-
-  
-	<link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Bootstrap + JoeBLog main styles -->
+	<link rel="stylesheet" href="assets/css/joeblog.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
-   
+    <!-- Page Second Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light bg-primary sticky-top">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +28,7 @@
                         <a class="nav-link" href="no-sidebar.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="components.html">More Blog</a>
+                        <a class="nav-link" href="single-post.html">More Blog</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,7 +61,9 @@
         <ol class="breadcrumb pb-0">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Introduction to SSG</li>
+            <li class="breadcrumb-item">Blog by ~ Hariom Surawse</li>
         </ol>
+        
     </header>
     <!-- End Of Page Header -->
 
@@ -74,133 +74,129 @@
                     <div class="card-header pt-0">
                         <h3 class="card-title mb-4">Web development-Frameworks-SSG</h3>
                         <div class="blog-media mb-4">
-                            <img src="assets/imgs/ssg.png" alt="" class="w-100">
+                            <img src="assets/imgs/SSG.png" alt="" class="w-100">
                             <a href="#" class="badge badge-primary">#Web-dev</a> 
                         </div>  
                        
                     </div>
                     <div class="card-body border-top">
-                        <p class="my-3">Static Site Generators (SSG): The Backbone of Fast and Efficient Websites
-                            In the ever-evolving world of web development, speed and efficiency have become paramount. Static Site Generators (SSGs) have emerged as powerful tools that cater to these needs, offering a way to build fast, secure, and scalable websites. But what exactly are SSGs, and why are they gaining such popularity?
-                            What is a Static Site Generator?
-                            A Static Site Generator is a tool that pre-builds all the pages of your website as static files (HTML, CSS, and JavaScript) before serving them to the client. Unlike traditional dynamic sites that generate content on-the-fly via a server, SSGs compile content during the build process. This means when a user visits the site, they receive a fully rendered page directly from a Content Delivery Network (CDN), resulting in lightning-fast load times.<br>
-<p>Key Advantages of SSGs:
-    <br>Speed and Performance: Since SSGs serve pre-rendered pages, the load times are significantly faster compared to dynamic sites. Users get near-instant access to content, which enhances the overall user experience.
-    <br>Security: With SSGs, there’s no direct connection to a database or server-side code, reducing the attack surface for hackers. Static sites are less vulnerable to common security threats such as SQL injection or server-side exploits.
+                        <h3 class="mt-3 animated fadeIn">Introduction to Static Site Generators (SSG)</h3>
+                        <p class="animated fadeIn">
+                            Static Site Generators (SSGs) have transformed how websites are built by combining the flexibility of dynamic content with the speed and reliability of static files. Unlike traditional CMS (Content Management Systems) that rely on server-side processing for every page request, SSGs generate static HTML files at build time. This results in fast, lightweight, and secure websites.
+                        </p>
+                        
+                        <h4 class="mt-4 animated fadeIn">How SSGs Work</h4>
+                        <p class="animated fadeIn">
+                            An SSG works by taking content from sources like Markdown files, CMS, or APIs and compiling it into static HTML pages. These static pages are then deployed on a web server. Since no dynamic content generation is needed during page requests, the websites load quickly and are easy to cache across CDN (Content Delivery Network) servers.
+                        </p>
+                    
+                        <div class="blog-media my-4 animated fadeIn">
+                            <img src="assets/imgs/ssg.webp" alt="Static Site Generator" class="w-100">
+                            <a href="#" class="badge badge-primary">#SSG</a> 
+                        </div>
+                    
+                        <h4 class="mt-4 animated fadeIn">Benefits of SSGs</h4>
+                        <ul class="animated fadeIn">
+                            <li><strong>Performance:</strong> Since SSGs pre-generate the pages at build time, the final product is a highly optimized static site, which results in fast load times.</li>
+                            <li><strong>Scalability:</strong> With no database or server-side processing, SSGs are highly scalable, as pages can be cached and served instantly from a CDN.</li>
+                            <li><strong>Security:</strong> Without a live backend, there is a smaller attack surface, reducing vulnerabilities like SQL injection or server-side attacks.</li>
+                            <li><strong>SEO-Friendly:</strong> Static sites are ideal for SEO because search engines can easily crawl pre-rendered pages, resulting in improved rankings.</li>
+                        </ul>
+                        
+                        <h3 class="mt-4 animated fadeIn">Video Demonstration of SSGs</h3>
+                        <div class="w-100 animated fadeIn">
+                            <iframe width="100%" height="350" src="https://www.youtube.com/embed/UFdY3t_tB1U?si=2zRL7DRn9EbZNNBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    
+                        <h4 class="mt-4 animated fadeIn">Popular SSG Frameworks</h4>
+                    
+                        <h5 class="mt-2 animated fadeIn"><strong>Next.js (Static Generation Mode)</strong></h5>
+                        <p class="animated fadeIn">
+                            <strong>Feature:</strong> Next.js combines the best of both worlds with static generation and server-side rendering options.<br>
+                            <strong>Benefit:</strong> Developers can build fast, scalable websites with static generation, while still having access to dynamic content features when needed.
+                        </p>
+                    
+                        <h5 class="mt-2 animated fadeIn"><strong>Gatsby</strong></h5>
+                        <p class="animated fadeIn">
+                            <strong>Feature:</strong> Gatsby uses React and GraphQL to build static websites that can fetch data at build time from multiple sources like APIs, CMSs, and files.<br>
+                            <strong>Benefit:</strong> By pulling in data at build time, Gatsby ensures that the website has the most up-to-date content while maintaining high performance.
+                        </p>
+                    
+                        <h5 class="mt-2 animated fadeIn"><strong>Hugo</strong></h5>
+                        <p class="animated fadeIn">
+                            <strong>Feature:</strong> One of the fastest static site generators available, Hugo is written in Go and compiles websites in seconds.<br>
+                            <strong>Benefit:</strong> Ideal for developers who need to build and deploy static websites quickly, without compromising on performance.
+                        </p>
+                    
+                        <div class="blog-media my-4 animated fadeIn">
+                            <img src="assets/imgs/gatsby_hugo_nextjs.webp" alt="Popular SSG Frameworks" class="w-100">
+                            <a href="#" class="badge badge-primary">#SSGFrameworks</a> 
+                        </div>  
+                    
+                        <h4 class="mt-4 animated fadeIn">Use Cases for SSGs</h4>
+                        <ul class="animated fadeIn">
+                            <li><strong>Blogs and Documentation Sites:</strong> SSGs are perfect for content-driven sites like blogs or documentation because they can be pre-built and serve static pages quickly.</li>
+                            <li><strong>Portfolios and Landing Pages:</strong> For personal portfolios or business landing pages, SSGs provide an efficient and scalable solution with minimal maintenance.</li>
+                            <li><strong>eCommerce Sites:</strong> By using static site generators with dynamic APIs, developers can build high-performance eCommerce sites with fast load times and smooth user experience.</li>
+                        </ul>
+                        
+                        <p class="my-3 animated fadeIn">
+                            In this blog, we’ve explored how static site generators are making websites faster, safer, and easier to scale. As web development continues to evolve, SSGs offer a powerful solution for developers looking to build high-performance sites without the complexity of server-side rendering. Whether you’re building a personal blog or a large-scale enterprise application, adopting SSGs can lead to faster load times, better security, and improved SEO.
+                        </p>
+                        
+                        <!-- Call-to-Action Section -->
+                        <h3 class="mt-4 animated fadeIn">Get Started with SSGs Today</h3>
+                        <p class="animated fadeIn">Click the button below to try building your own site with one of these popular static site generators!</p>
+                    
+                        <!-- Button for SSG Framework Guide -->
+                        <div class="text-center mb-4 animated fadeIn">
+                            <button class="btn btn-primary btn-lg">Explore SSG Guides</button>
+                        </div>
+                    </div>
+                    
+                    <h5>Try SSG Code in StackBlitz</h5>
+<iframe src="https://stackblitz.com/edit/SSG?embed=1&file=README.md" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"></iframe>
 
+                    <div>
+                        <h4 class="mt-4">Installation Guide for SSG</h4>
+    <p>Follow these steps to get started with SSG:</p>
+    <ol>
+        <li>Ensure you have <a href="https://nodejs.org/" target="_blank">Node.js</a> installed (version 12 or later).</li>
+        <li>Open your terminal and run the following command to install the SSG template:</li>
+        <pre><code>npm create svelte@latest my-app</code></pre>
+        <li>Navigate into your project directory:</li>
+        <pre><code>cd my-app</code></pre>
+        <li>Install the dependencies:</li>
+        <pre><code>npm install</code></pre>
+        <li>Run the development server:</li>
+        <pre><code>npm run dev</code></pre>
+        <li>Open your browser and go to <strong>http://localhost:5173</strong> to view your app.</li>
+    </ol>
 
-    <br>Scalability: SSGs are highly scalable because they can be served from a CDN. Whether you have 10 or 10,000 users, the performance remains consistent without additional server costs.
-    <br>SEO-Friendly: SSGs generate clean, static HTML, making it easier for search engines to crawl and index your site. This improves SEO, helping your site rank higher in search engine results.
-
-
-    <br>Cost-Effective: Hosting static files is much cheaper than dynamic sites since they can be served from inexpensive CDNs. There’s no need for complex server infrastructure, which reduces hosting and maintenance costs.</p>
-                        <p>Popular Static Site Generators
-                            Gatsby: Built on React, Gatsby is a powerful SSG that integrates seamlessly with GraphQL and various CMSs, offering a modern development experience.
-
-Next.js: While primarily known as a React framework, Next.js also offers static site generation alongside server-side rendering, giving developers flexibility in how they build their sites.
-
-Jekyll: One of the oldest and most popular SSGs, Jekyll is built in Ruby and powers GitHub Pages, making it a go-to choice for developers familiar with the platform.
-
-Hugo: Known for its speed, Hugo is written in Go and is capable of building extremely large sites quickly, making it a favorite among developers who prioritize performance.
-<article>
-    <h1>Understanding Static Site Generators (SSG)</h1>
-    <p>Static Site Generators (SSGs) are a powerful tool for creating static websites by combining templates with content data. Below is a flowchart that explains the process of how an SSG works:</p>
-    
-    <h2>SSG Workflow Flowchart</h2>
-    <pre><code class="language-text">
-    +----------------+
-    |    Start       |
-    +----------------+
-             |
-             v
-    +----------------+
-    | Load Templates  |
-    +----------------+
-             |
-             v
-    +----------------+
-    | Load Content    |
-    +----------------+
-             |
-             v
-    +----------------+
-    | Process Content |
-    +----------------+
-             |
-             v
-    +----------------+
-    | Inject Data     |
-    | Into Templates  |
-    +----------------+
-             |
-             v
-    +----------------+
-    | Apply Configs   |
-    +----------------+
-             |
-             v
-    +----------------+
-    | Generate Static |
-    | HTML Files      |
-    +----------------+
-             |
-             v
-    +----------------+
-    | Save Files      |
-    +----------------+
-             |
-             v
-    +----------------+
-    |     End         |
-    +----------------+
-    </code></pre>
-
-    <p>This flowchart outlines the step-by-step process:</p>
+    <!-- Sample Projects Section -->
+    <h4 class="mt-4">Sample Projects Built with SSG</h4>
+    <p>Here are some sample projects showcasing what you can build with SSG:</p>
     <ul>
-        <li><strong>Start:</strong> Begin with the SSG, loading the necessary templates and content files.</li>
-        <li><strong>Load Templates:</strong> The SSG loads the HTML templates that define the layout of each page.</li>
-        <li><strong>Load Content:</strong> The content data is loaded, typically written in formats like Markdown or JSON.</li>
-        <li><strong>Process Content:</strong> The content is processed, often converted into HTML.</li>
-        <li><strong>Inject Data into Templates:</strong> The processed content is injected into the templates, replacing placeholders like <code>{{ site.title }}</code> and <code>{{ content }}</code>.</li>
-        <li><strong>Apply Configurations:</strong> Configurations such as URL paths and metadata are applied.</li>
-        <li><strong>Generate Static Files:</strong> The final HTML files are generated by combining the templates and content.</li>
-        <li><strong>Save Files:</strong> The generated files are saved to the output directory, ready for deployment.</li>
-        <li><strong>End:</strong> The process ends, resulting in a static website that can be deployed to a web server.</li>
+        <li>
+            <h5>1. SSG Todo App</h5>
+            <p>A simple yet functional Todo application built with SSG to manage tasks.</p>
+            <a href="https://github.com/zenstackhq/sample-todo-SSG" target="_blank">View Code on GitHub</a>
+        </li>
+        <li>
+            <h5>2. SSG Blog</h5>
+            <p>A blogging platform built with SSG, showcasing features like markdown support and routing.</p>
+            <a href="https://github.com/josh-collinsworth/SSG-blog-starter" target="_blank">View Code on GitHub</a>
+        </li>
+        <li>
+            <h5>3. SSG E-commerce Store</h5>
+            <p>A complete e-commerce application demonstrating product management and checkout functionality.</p>
+            <a href="https://github.com/bmdavis419/SSG-Ecommerce" target="_blank">View Code on GitHub</a>
+        </li>
     </ul>
-</article>
-
-
-<br>Challenges of SSGs:
-<br>While SSGs offer many benefits, they also come with some challenges:
-
-Build Times: For large sites with thousands of pages, build times can become lengthy, though tools like incremental builds are addressing this issue.<br>Push Notifications: They manage push notifications, enabling real-time updates and user engagement.
-<br>Content Updates: Since pages are pre-built, content updates require a rebuild of the site. This can be a downside if your site’s content needs to change frequently.
-<br>Metadata: The web app manifest is a JSON file that provides metadata about the PWA, including the app’s name, icons, and theme colors.
-Home Screen Installation: It defines how the app should appear when installed on the user’s home screen, including the app’s icon and display mode (e.g., fullscreen or standalone).
-<br><br>
-<div class="blog-media mb-4">
-    <img src="assets/imgs/ssg1.png" alt="" class="w-100">
-    <a href="#" class="badge badge-primary">#PWA's</a> 
-</div>  
-
-<br>Benefits of Using Static Site Generators (SSGs):
-    <br>Blazing Fast Performance
-        SSGs generate static HTML files during the build process, which are served directly to the users. Since there’s no need to fetch data from a database or render content dynamically, the pages load almost instantaneously. This speed enhances user experience and keeps visitors engaged.
-         <br> Enhanced Security
-         With no reliance on databases or server-side processing, SSGs minimize common security vulnerabilities like SQL injection and cross-site scripting (XSS). Serving static files reduces the attack surface, making your website more secure by default.
-          <br>Scalability Without the Hassle
-          SSGs are highly scalable because static files can be distributed globally through Content Delivery Networks (CDNs). Whether you have a small blog or a large enterprise site, SSGs handle traffic effortlessly, without the need for complex server infrastructure.
-           <br> SEO Advantages
-           Search engines favor fast-loading, easily crawlable sites. SSGs produce clean HTML files that search engines can quickly index, improving your site’s SEO performance. Faster load times also contribute to better rankings.
-           <br>Cost Efficiency
-           Hosting static sites is significantly cheaper than hosting dynamic sites. With fewer server resources needed and the ability to host on inexpensive platforms like GitHub Pages or Netlify, you can reduce both hosting and maintenance costs.
-</p>
-                       
-
-                         </div>
+                    </div>
                     
                     <div class="card-footer">
-                         <h6 class="mt-5 mb-3 text-center"><a href="#" class="text-dark">Comments </a></h6>
+                         <h6 class="mt-5 mb-3 text-center"><a href="#" class="text-dark">Thank You!</a></h6>
                         <hr>
                         <div class="media">
                             
@@ -212,120 +208,177 @@ Home Screen Installation: It defines how the app should appear when installed on
                             
                         </div>
 
-                        <h6 class="mt-5 mb-3 text-center"><a href="#" class="text-dark">Write Your Comment</a></h6>
-                        <hr>
-                        <form>
-                            <div class="form-row">
-                                <div class="col-12 form-group">
-                                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Enter Your Comment Here"></textarea>
-                                </div>
-                                <div class="col-sm-4 form-group">
-                                    <input type="text" class="form-control" value="Name">
-                                </div>
-                                <div class="col-sm-4 form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="col-sm-4 form-group">
-                                    <input type="url" class="form-control" placeholder="Website">
-                                </div>
-                                <div class="form-group col-12">
-                                    <button class="btn btn-primary btn-block">Post Comment</button>
-                                </div>
+                        <div class="card-footer">
+                            <h6 class="mt-5 mb-3 text-center"><a href="#" class="text-dark">Comments</a></h6>
+                            <hr>
+                            
+                            <div id="comments-section">
+                                <!-- Comments will be displayed here -->
                             </div>
-                        </form>
+                        
+                            <h6 class="mt-5 mb-3 text-center"><a href="#" class="text-dark">Write Your Comment</a></h6>
+                            <hr>
+                            <form id="comment-form">
+                                <div class="form-row">
+                                    <div class="col-12 form-group">
+                                        <textarea id="comment-text" cols="30" rows="5" class="form-control" placeholder="Enter Your Comment Here" required></textarea>
+                                    </div>
+                                    <div class="col-sm-4 form-group">
+                                        <input type="text" id="comment-name" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-sm-4 form-group">
+                                        <input type="email" id="comment-email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-sm-4 form-group">
+                                        <input type="text" id="comment-liking" class="form-control" placeholder="Liked it?">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <button type="submit" class="btn btn-primary btn-block">Post Comment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <script>
+                            // Simulate a simple local storage for comments
+                            let comments = JSON.parse(localStorage.getItem('comments')) || [];
+                        
+                            function displayComments() {
+                                const commentsSection = document.getElementById('comments-section');
+                                commentsSection.innerHTML = '';
+                        
+                                // Display the first 2 comments
+                                const displayComments = comments.slice(0, 2);
+                                displayComments.forEach(comment => {
+                                    const commentDiv = document.createElement('div');
+                                    commentDiv.classList.add('media', 'mb-3');
+                                    commentDiv.innerHTML = `
+                                        <div class="media-body">
+                                            <h6 class="mt-0">${comment.name} <small class="text-muted">(${comment.email})</small></h6>
+                                            <p>${comment.text}</p>
+                                        </div>
+                                    `;
+                                    commentsSection.appendChild(commentDiv);
+                                });
+                            }
+                        
+                            // Handle form submission
+                            document.getElementById('comment-form').addEventListener('submit', function(e) {
+                                e.preventDefault(); // Prevent form from submitting
+                        
+                                const text = document.getElementById('comment-text').value;
+                                const name = document.getElementById('comment-name').value;
+                                const email = document.getElementById('comment-email').value;
+                        
+                                // Create a new comment object
+                                const newComment = { text, name, email };
+                        
+                                // Add the new comment to the comments array and save to localStorage
+                                comments.push(newComment);
+                                localStorage.setItem('comments', JSON.stringify(comments));
+                        
+                                // Clear the form
+                                this.reset();
+                        
+                                // Display updated comments
+                                displayComments();
+                            });
+                        
+                            // Initial call to display comments
+                            displayComments();
+                        </script>
+                        
                     </div>                  
                 </div> 
 
                 
             </div>
             <!-- Sidebar -->
-            <div class="page-sidebar">
-                <h6 class="sidebar-title section-title mb-4 mt-3">Current Frameworks</h6>
+            <div class="page-sidebar text-center">
+                <!-- Current Frameworks Section -->
+                <h6 class="sidebar-title section-title mb-4 mt-3" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Current Frameworks</h6>
                 
-                
-                <p>Current Framework: React.js
-
-                    Overview: React.js remains one of the most popular front-end libraries for building user interfaces. Known for its component-based architecture and virtual DOM, React enables developers to create dynamic and responsive applications efficiently.
-                    Strengths: Reusable components, strong community support, and a robust ecosystem.
-                    Recent Updates: Introduction of Concurrent Mode and React Server Components.
-                    Emerging Trends:
-                    
-                    Concurrent Mode: Enhances user experience by enabling React to pause and resume rendering work, improving responsiveness.
-                    Server Components: Allow rendering parts of the application on the server, optimizing client-side performance.
-                    Case Study Comparison:
-                    
-                    React’s Strengths: Proven performance, vast ecosystem, and community support.
+                <p style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #555; line-height: 1.6;">
+                    <strong>Current Framework:</strong> React.js<br><br>
+                    <strong>Overview:</strong> React.js remains one of the most popular front-end libraries for building user interfaces. Known for its component-based architecture and virtual DOM, React enables developers to create dynamic and responsive applications efficiently.<br><br>
+                    <strong>Strengths:</strong> Reusable components, strong community support, and a robust ecosystem.<br>
+                    <strong>Recent Updates:</strong> Introduction of Concurrent Mode and React Server Components.<br><br>
+                    <strong>Emerging Trends:</strong><br>
+                    - <strong>Concurrent Mode:</strong> Enhances user experience by enabling React to pause and resume rendering work, improving responsiveness.<br>
+                    - <strong>Server Components:</strong> Allow rendering parts of the application on the server, optimizing client-side performance.<br><br>
+                    <strong>Case Study Comparison:</strong><br>
+                    React’s Strengths: Proven performance, vast ecosystem, and community support.<br>
                     New Trends: Emerging technologies like Svelte and frameworks like Next.js offer different approaches to handling performance and rendering, potentially offering benefits in specific use cases.
-                    </p>
-                
-
-                <h6 class="sidebar-title mt-5 mb-4">Search Keywords</h6>
-                <form action="">
-                    <div class="subscribe-wrapper">
-                        <input type="email" class="form-control" placeholder="Search">
-                        <button type="submit" class="btn btn-primary"><i class="ti-location-arrow"></i></button>
-                    </div>
-                </form>
-                <br>
-                <h6 class="mt-5 text-center">Read Full Blog</h6>
-                <hr>
-                <div class="row">                       
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-5">
-                            <div class="card-header p-0">                                   
-                                <div class="blog-media">
-                                    <img src="assets/imgs/angular.png" alt="" class="w-100">
-                                    <a href="#" class="badge badge-primary">#Angular</a>        
-                                </div>  
-                            </div>
-                            <div class="card-body px-0">
-                                <h6 class="card-title mb-2"><a href="#" class="text-dark">Angular.js </a></h6>  
-                                
-                            </div>                  
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card mb-5">
-                            <div class="card-header p-0">                                   
-                                <div class="blog-media">
-                                    <img src="assets/imgs/SSR.png" alt="" class="w-100">
-                                    <a href="#" class="badge badge-primary">#SSR</a>        
-                                </div>  
-                            </div>
-                            <div class="card-body px-0">
-                                <h6 class="card-title mb-2"><a herf="#" class="text-dark">SSG and SSR</a></h6>   
-                                
-                            </div>      
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 d-none d-lg-block">
-                        <div class="card mb-5">
-                            <div class="card-header p-0">                                   
-                                <div class="blog-media">
-                                    <img src="assets/imgs/gra.png" alt="" class="w-100">
-                                    <a href="#" class="badge badge-primary">#GraphQL</a>       
-                                </div>  
-                            </div>
-                            <div class="card-body px-0">
-                                <h6 class="card-title mb-2">GrapghQL and Apollo</h6>   
-                                
-                            </div>  
-                        </div>
-                    </div>
+                </p>
+            
+                <!-- Search Section -->
+                <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Search Keywords</h6>
+<form id="searchForm" onsubmit="return false;">
+    <div class="subscribe-wrapper">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search..." style="border-radius: 25px; border: 1px solid #ccc;">
+        <button type="submit" class="btn btn-primary" style="border-radius: 25px; margin-top: 10px;" onclick="searchAndHighlight()"><i class="ti-location-arrow"></i></button>
+    </div>
+</form>
+            
+            
+                <!-- Tags Section -->
+                <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Tags</h6>
+                <div class="tags">
+                    <a href="SSG.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#SSG</a>
+                    <a href="GraphQL.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#GraphQL</a>
+                    <a href="Apollo.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#GraphQL and Apollo</a>
+                    <a href="Vue.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#Vue.js</a>
+                    <a href="SSG.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#SSG</a>
+                    <a href="pwa.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#PWA's</a>
+                    <a href="Angular.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#Angular</a>
                 </div>
-
-                <br>
-                <h6 class=" ">Tags</h6>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#sveltekit</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#GraphQL</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#GrapghQL and Apollo</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#Vue.js</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#SSG</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#PWA's</a>
-                <a href="javascript:void(0)" class="badge badge-primary m-1">#Angular</a>
-    
-                
-            </div>
+            
+                <!-- Frameworks Section -->
+                <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Frameworks</h6>
+                <div class="row px-3">
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/fw1.png" alt="" class="w-100" style="transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/fw2.png" alt="" class="w-100 m-0" style="transition: transform 0.3s ease;">
+                        </a>
+                    </div>  
+                    <div class="col-4 p-1 figure">
+                        <a href="#" class="figure-img">
+                            <img src="assets/imgs/fw3.png" alt="" class="w-100" style="transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                    <!-- Repeat for other images -->
+                </div>
+            
+                <!-- Featured Post Section -->
+                <figure class="figure mt-5">
+                    <a href="single-post.html" class="figure-img" style="transition: transform 0.4s ease;">
+                        <img src="assets/imgs/img-4.jpg" alt="" class="w-100" style="border-radius: 10px;">
+                        <figcaption class="figcaption" style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #333; margin-top: 10px;">Web Dev in 2024?</figcaption>
+                    </a>
+                </figure>
+            
+                <!-- Popular Frameworks Section -->
+                <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Popular Frameworks</h6>
+                <div class="card mb-4">
+                    <a href="single-post.html" class="overlay-link"></a>
+                    <div class="card-header p-0">                                   
+                        <div class="blog-media">
+                            <img src="assets/imgs/Angular.png" alt="" class="w-100" style="border-radius: 10px; transition: transform 0.4s ease;">
+                            <a href="#" class="badge badge-primary" style="font-size: 0.9rem; border-radius: 15px;">#Angular</a>      
+                        </div>  
+                    </div>
+                    <div class="card-body px-0">
+                        <h5 class="card-title mb-2" style="font-family: 'Roboto', sans-serif; color: #333;">Why Angular</h5>
+                        <p style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #555; line-height: 1.6;">
+                            Angular, developed by Google, is a comprehensive framework that provides everything needed to build dynamic web applications. It includes features like two-way data binding, dependency injection, and a powerful CLI.
+                        </p>
+                    </div>      
+                </div>
         </div>
     </section>
 
@@ -367,18 +420,126 @@ Home Screen Installation: It defines how the app should appear when installed on
                     <img src="assets/imgs/logo.svg" alt="" class="logo">
                 </div>
                 <div class="col-md-9 text-center text-md-right">
-                    <div class="socials">
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-facebook pr-1"></i> 123,345</a>
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-twitter pr-1"></i> 321,534</a>
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-pinterest-alt pr-1"></i> 543,312</a>
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-instagram pr-1"></i> 123,023</a>
-                        <a href="javascript:void(0)" class="font-weight-bold text-muted mr-4"><i class="ti-youtube pr-1"></i> 231,043</a>
-                    </div>
+                    
                 </div>  
             </div>
-            <p class="border-top mb-0 mt-4 pt-3 small">&copy; <script>document.write(new Date().getFullYear())</script>, JoeBlog Created By <a href="https://www.devcrud.com" class="text-muted font-weight-bold" target="_blank">DevCrud.</a>  All rights reserved </p> 
-        </div>      
+            </div>      
     </footer>
+   <!-- Remove the container to make the footer full width -->
+<footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192;">
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with me on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/your-profile" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/your-profile" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="mailto:sonnekunal2@gmail.com" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/your-profile" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/your-profile" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/erenyeager101" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">WT-HA Blog Website</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              Welcome to WT blog website where we share articles on the latest trends in web development, machine learning, and emerging technologies. Dive into my posts to learn and stay updated!
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Categories</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="#!" class="text-dark">Web Development</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Machine Learning</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">IoT & Automation</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Project Guides</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Quick Links</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p>
+              <a href="#!" class="text-dark">Explore More Blogs</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Contact</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">My Projects</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Contribute</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+            <p><i class="fas fa-home mr-3"></i> Pune, Maharashtra, India</p>
+            <p><i class="fas fa-envelope mr-3"></i> sonnekunal2@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91 9876543210</p>
+            <p><i class="fas fa-print mr-3"></i> Available for collaborations!</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="https://github.com/erenyeager101">View Project on Github</a> 
+    </div>
+    <!-- Copyright -->
+  </footer>
     <!-- End of Page Footer -->
 
 	<!-- core  -->
@@ -387,8 +548,35 @@ Home Screen Installation: It defines how the app should appear when installed on
 
     <!-- JoeBLog js -->
     <script src="assets/js/joeblog.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-</body>
+    <script>
+       
+        function searchAndHighlight() {
+          
+            removeHighlights();
+        
+            const keyword = document.getElementById('searchInput').value.toLowerCase();
+            if (!keyword) return;
+        
+            const content = document.body.innerHTML;
+            const regex = new RegExp(`(${keyword})`, 'gi'); 
+        
+            const highlightedContent = content.replace(regex, '<span class="highlight">$1</span>');
+            document.body.innerHTML = highlightedContent;
+        
+            const firstHighlight = document.querySelector('.highlight');
+            if (firstHighlight) {
+                firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+        
+        function removeHighlights() {
+            const highlightedElements = document.querySelectorAll('.highlight');
+            highlightedElements.forEach(el => {
+                el.outerHTML = el.innerHTML; 
+            });
+        }
+        
+            </script>
 
 </body>
 </html>

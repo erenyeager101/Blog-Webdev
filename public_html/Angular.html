@@ -57,10 +57,10 @@
 
     <!-- Page Header -->
     <header class="page-header page-header-mini">
-        <h1 class="title">GraphQL with Apollo</h1>
+        <h1 class="title">Angular with Angular</h1>
         <ol class="breadcrumb pb-0">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Graph and Apollo</li>
+            <li class="breadcrumb-item active" aria-current="page">Angular</li>
             <li class="breadcrumb-item">by Raj Thakur</li>
         </ol>
     </header>
@@ -71,69 +71,83 @@
             <div class="page-content">
                 <div class="card">
                     <div class="card-header pt-0">
-                        <h3 class="card-title mb-4">Web development-Frameworks-GraphQL</h3>
+                        <h3 class="card-title mb-4">Web development-Frameworks-Angular</h3>
                         <div class="blog-media mb-4">
-                            <img src="assets/imgs/GraphQL.jpg" alt="" class="w-100">
+                            <img src="assets/imgs/angular.png" alt="" class="w-100">
                             <a href="#" class="badge badge-primary">#Web-dev</a> 
                         </div>  
                        
                     </div>
-                    <div class="card-body border-top" id="graphql-blog">
-                        <h2 class="text-center my-4 animated fadeIn">Introduction to GraphQL</h2>
+                    <div class="card-body border-top" id="Angular-blog">
+                        <h2 class="text-center my-4 animated fadeIn">Introduction to Angular</h2>
                         <p class="my-3 animated fadeIn">
-                            <strong>What is GraphQL?</strong><br>
-                            GraphQL is an open-source query language for APIs, originally developed by Facebook in 2012. Unlike traditional REST APIs, GraphQL allows clients to request exactly the data they need, no more, no less. This approach resolves issues such as over-fetching and under-fetching of data, which are common in REST APIs.
+                            <strong>What is Angular?</strong><br>
+                            Angular is a popular, open-source web application framework developed by Google. Released initially in 2010, Angular has become one of the most widely used frameworks for building dynamic single-page applications (SPAs). It is built using TypeScript, a superset of JavaScript, and offers a robust platform for developers to create large-scale, efficient web applications with powerful features such as two-way data binding, dependency injection, and modular development.
                         </p>
-                        <h3 class="mt-4 animated fadeIn">Why GraphQL?</h3>
+                    
+                        <h3 class="mt-4 animated fadeIn">Why Angular?</h3>
+                        <p class="my-3 animated fadeIn">Angular is known for its ability to build complex, enterprise-level web applications while maintaining a modular structure. Here’s why Angular stands out:</p>
                         <ul class="animated fadeIn">
-                            <li><strong>Efficiency:</strong> Clients can request multiple resources in a single query, reducing the number of API calls.</li>
-                            <li><strong>Flexibility:</strong> GraphQL enables developers to tailor queries to the specific needs of the client application.</li>
-                            <li><strong>Strongly Typed Schema:</strong> GraphQL APIs are defined by a schema that enforces type safety and self-documentation.</li>
-                            <li><strong>Real-time Data:</strong> GraphQL supports real-time updates through subscriptions, making it ideal for applications that require live data feeds.</li>
+                            <li><strong>Component-Based Architecture:</strong> Angular promotes a component-based architecture, making it easier to build reusable components and manage the overall structure of the app.</li>
+                            <li><strong>Two-Way Data Binding:</strong> Angular's two-way data binding allows real-time synchronization between the model (business logic) and the view (user interface), making it easier to manage data changes across the application.</li>
+                            <li><strong>Dependency Injection:</strong> Angular’s dependency injection (DI) system enhances testability and modularity by efficiently handling the management of dependencies.</li>
+                            <li><strong>Comprehensive Framework:</strong> Angular provides out-of-the-box solutions for routing, forms, HTTP requests, and animations, reducing the need to install third-party libraries for these features.</li>
+                            <li><strong>TypeScript:</strong> Since Angular is built with TypeScript, it introduces static typing, which helps developers write cleaner and more maintainable code.</li>
                         </ul>
                         
-                        <h3 class="mt-4 animated fadeIn">Below is a beginner's guide to GraphQL</h3>
+                        <h3 class="mt-4 animated fadeIn">Below is a beginner's guide to Angular</h3>
                         <div class="video-container animated fadeIn">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/eIQh02xuVw4?si=Qb-04Ve1vmuoX_7p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JWhRMyyF7nc?si=wpbrNqjjDPQFFPNC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         
-                        <p class="my-3 animated fadeIn">
-                            <strong>How Does GraphQL Work?</strong><br>
-                            GraphQL APIs are structured around a single endpoint that processes queries. The client sends a query specifying the exact data it needs, and the server responds with that data in a predictable structure.
-                        </p>
+                        <h3 class="mt-4 animated fadeIn">Key Features of Angular</h3>
+    <ul class="animated fadeIn">
+        <li><strong>Directives:</strong> Angular extends HTML’s capabilities by providing custom directives that enable new functionalities for building dynamic templates.</li>
+        <li><strong>Angular CLI:</strong> Angular offers a powerful Command Line Interface (CLI) that allows developers to quickly scaffold, build, and manage projects with a single command.</li>
+        <li><strong>RxJS for Reactive Programming:</strong> Angular heavily relies on RxJS (Reactive Extensions for JavaScript) to handle asynchronous operations using observables, which is useful for managing data streams, especially in HTTP requests.</li>
+        <li><strong>Routing:</strong> Angular has a built-in routing module that enables developers to create dynamic, multi-page applications with client-side routing.</li>
+        <li><strong>Lazy Loading:</strong> Angular allows lazy loading of modules, which helps improve the performance of large applications by loading components only when needed.</li>
+    </ul>
+
+    <h3 class="mt-4 animated fadeIn">Angular Architecture Overview</h3>
+    <p class="my-3 animated fadeIn">
+        Angular applications are designed around components. Each component consists of an HTML template, CSS for styling, and a TypeScript class that defines the business logic. The architecture follows the Model-View-Controller (MVC) design pattern, making it easy to manage complex apps by separating concerns.
+    </p>
                         
-                        <h4 class="mt-4 animated fadeIn">Advantages of GraphQL:</h4>
-                        <ul class="animated fadeIn">
-                            <li><strong>Single Endpoint:</strong> Simplifies API architecture by providing a single endpoint for all queries.</li>
-                            <li><strong>Precise Data Fetching:</strong> Reduces payload size by returning only the requested data.</li>
-                            <li><strong>Introspection:</strong> The schema can be queried for metadata, allowing for powerful development tools and easier debugging.</li>
-                        </ul>
+    <h4 class="mt-4 animated fadeIn">Advantages of Angular</h4>
+    <ul class="animated fadeIn">
+        <li><strong>Modularity:</strong> Angular applications are highly modular. Each feature is divided into different modules, making development, testing, and scaling easier.</li>
+        <li><strong>Strong Ecosystem:</strong> With a rich ecosystem of tools, libraries, and third-party extensions, Angular is a comprehensive solution for full-stack development.</li>
+        <li><strong>Cross-Platform Support:</strong> Angular enables you to build Progressive Web Apps (PWAs) and Native apps using Angular with tools like Ionic and NativeScript.</li>
+        <li><strong>High Performance:</strong> Angular's Ahead-of-Time (AOT) compilation significantly improves performance by compiling templates before they are downloaded to the browser.</li>
+        <li><strong>Long-Term Support:</strong> Being backed by Google, Angular offers long-term support and regular updates, making it a stable choice for large-scale applications.</li>
+    </ul>
                     
                         <div class="blog-media mb-4 animated fadeIn">
-                            <img src="assets/imgs/gra.png" alt="GraphQL Illustration" class="w-100">
-                            <a href="#" class="badge badge-primary">#GraphQL</a> 
+                            <img src="assets/imgs/anular2.png" alt="Angular Illustration" class="w-100">
+                            <a href="#" class="badge badge-primary">#Angular</a> 
                         </div>
                     
                         <p class="my-3 animated fadeIn">
-                            In this blog, we'll dive into the latest trends and emerging frameworks that are shaping the future of web development. We'll explore how these new tools compare to established frameworks, what advantages they offer, and how they can help developers stay ahead in a competitive industry. Whether you're building a small personal website or a complex enterprise application, understanding the latest in web development frameworks will empower you to make informed decisions and create more effective, modern web solutions.
+                            Angular is a powerful framework for building high-performance, scalable web applications. Its structured architecture, modularity, and robust ecosystem make it an ideal choice for both small-scale and enterprise-level projects. If you’re looking for a reliable and versatile framework that ensures maintainability and efficiency, Angular is a strong contender in the web development landscape.
                         </p>
                     
-                        <!-- Apollo Sandbox Section -->
-                        <h3 class="mt-4 animated fadeIn">Try GraphQL in Apollo Sandbox</h3>
+                        <!-- Angular Sandbox Section -->
+                        <h3 class="mt-4 animated fadeIn">Try Angular in Angular Sandbox</h3>
 <p class="my-3 animated fadeIn">
-    Click the button below if you want to try GraphQL in the Apollo Sandbox!
+    Click the button below if you want to try Angular in the Angular Sandbox!
 </p>
 
 <!-- Button to show the sandbox -->
 <div class="text-center mb-4">
-    <button id="showSandboxBtn" class="btn btn-primary btn-lg animated fadeIn">Try GraphQL in Sandbox</button>
+    <button id="showSandboxBtn" class="btn btn-primary btn-lg animated fadeIn">Try Angular in Sandbox</button>
 </div>
 
 <!-- Hidden sandbox container, shown when button is clicked -->
 <div id="sandboxContainer" class="code-sandbox-container animated fadeIn" style="display: none;">
-    <iframe src="https://codesandbox.io/p/devbox/graphql-44c20?file=%2Fsrc%2Findex.js"
+    <iframe src="https://codesandbox.io/p/devbox/Angular-44c20?file=%2Fsrc%2Findex.js"
         style="width:100%; height:400px; border:0; border-radius:4px; overflow:hidden;"
-        title="Apollo GraphQL Sandbox"
+        title="Angular Angular Sandbox"
         allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
         sandbox="allow-modals allow-forms allow-popups allow-same-origin allow-scripts">
     </iframe>
@@ -268,8 +282,8 @@
                 <h6 class="sidebar-title mt-5 mb-4" style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #333;">Tags</h6>
                 <div class="tags">
                     <a href="sveltekit.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#SvelteKit</a>
-                    <a href="GraphQL.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#GraphQL</a>
-                    <a href="Apollo.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#GraphQL and Apollo</a>
+                    <a href="Angular.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#Angular</a>
+                    <a href="Angular.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#Angular and Angular</a>
                     <a href="Vue.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#Vue.js</a>
                     <a href="SSG.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#SSG</a>
                     <a href="pwa.html" class="badge badge-primary m-1" style="font-size: 0.9rem; border-radius: 15px;">#PWA's</a>
